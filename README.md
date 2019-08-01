@@ -1,3 +1,3 @@
 # torchboard_cartpole
-Testing torchboard with cartpole
-Pytorch 1.1
+Testing tensorboard with cartpole on Pytorch 1.1
+
