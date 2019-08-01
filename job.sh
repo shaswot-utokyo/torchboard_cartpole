@@ -1,6 +1,6 @@
 #!/bin/bash
 #PBS -q h-regular
-#PBS -l select=1:mpiprocs=1:ompthreads=1
+#PBS -l select=1:mpiprocs=1:ompthreads=16
 #PBS -W group_list=gk37
 #PBS -l walltime=00:15:00
 cd $PBS_O_WORKDIR
