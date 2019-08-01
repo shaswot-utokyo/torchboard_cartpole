@@ -24,7 +24,6 @@ import sys
 # from IPython.display import clear_output
 # import matplotlib.pyplot as plt
 # get_ipython().run_line_magic('matplotlib', 'inline')
-
 from torch.utils.tensorboard import SummaryWriter
 # %reload_ext tensorboard
 # %tensorboard --port=9806 --logdir ./runs
@@ -38,7 +37,7 @@ from torch.utils.tensorboard import SummaryWriter
 experiment_no  =  sys.argv[2]
 
 
-seed_value = sys.argv[1]
+seed_value = int(sys.argv[1])
 #seed_value = 789987 # sys.argv[1]
 
 # Writer will output to ./runs/ directory by default
@@ -72,7 +71,6 @@ import torch.nn.functional as F
 os.environ['PYTHONHASHSEED']=str(seed_value) 
 random.seed(seed_value) 
 np.random.seed(seed_value) 
-tf.random.set_seed(seed_value)
 torch.manual_seed(seed_value)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
