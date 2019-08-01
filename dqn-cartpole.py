@@ -39,7 +39,7 @@ experiment_no  =  sys.argv[2]
 
 
 seed_value = sys.argv[1]
-seed_value = 789987 # sys.argv[1]
+#seed_value = 789987 # sys.argv[1]
 
 # Writer will output to ./runs/ directory by default
 writer_dir = './runs/' + experiment_no + '_' + str(seed_value) + '_' + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
