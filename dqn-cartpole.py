@@ -85,7 +85,13 @@ env_id = "CartPole-v0"
 env = gym.make(env_id)
 env.seed(seed_value);
 
+import time
+import socket
 
+print("*************************************")
+print("Host: ", socket.gethostname())
+print("Start: ",  time.strftime("%I:%M:%S %p", time.localtime()))
+print("SEED: ", sys.argv[1])
 # In[7]:
 
 
@@ -315,6 +321,8 @@ for frame_idx in range(1, num_frames + 1):
 
 # In[ ]:
 
+print("End: ",  time.strftime("%I:%M:%S %p", time.localtime()))
+print("*************************************")
 
 
 
